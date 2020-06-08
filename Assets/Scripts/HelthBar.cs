@@ -6,23 +6,19 @@ using UnityEngine.UI;
 
 public class HelthBar : MonoBehaviour
 {
-
-    [SerializeField] private GameObjectHealth _gameObjectHealth;
-    [SerializeField] private TMP_Text _text;
+    [SerializeField] private ObjectWithHealth _objectWithHealth;
 
     private Slider _healthBar;
     private void Start()
     {
         _healthBar = GetComponent<Slider>();
-        _healthBar.maxValue = _gameObjectHealth.MaxHealth;
+        _healthBar.maxValue = _objectWithHealth.MaxHealth;
         _healthBar.minValue = 0;
-        _text.text = _gameObjectHealth.ObjectHealth.ToString(); 
+        _healthBar.value = _objectWithHealth.ObjectHealth;
     }
 
-    public void PrintHealth()
+    public void UpdateValue()
     {
-        _text.text = _gameObjectHealth.ObjectHealth.ToString();
+        _healthBar.value = _objectWithHealth.ObjectHealth;
     }
-
-
 }
