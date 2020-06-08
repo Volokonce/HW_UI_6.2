@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HelthBar : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     [SerializeField] private ObjectWithHealth _objectWithHealth;
 
