@@ -24,7 +24,7 @@ public class ObjectWithHealth : MonoBehaviour
         StartCoroutine(ChangeHealthSlow(rize, value));
     }
 
-    public IEnumerator ChangeHealthSlow(bool rize, float value)
+    private IEnumerator ChangeHealthSlow(bool rize, float value)
     {
         var waitingTime = new WaitForSeconds(0.05f);
 
