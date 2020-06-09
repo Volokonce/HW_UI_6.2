@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private ObjectWithHealth _objectWithHealth;
+    [SerializeField] private VitalSign _objectWithHealth;
 
     private Slider _healthBar;
     private void Start()
@@ -16,6 +16,6 @@ public class HealthBar : MonoBehaviour
 
     public void UpdateValue()
     {
-        _healthBar.value = _objectWithHealth.ObjectHealth / _objectWithHealth.MaxHealth;
+        _healthBar.value = _objectWithHealth.HealthValue / _objectWithHealth.MaxHealth;
     }
 }

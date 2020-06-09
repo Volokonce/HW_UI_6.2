@@ -9,7 +9,7 @@ public class Button : MonoBehaviour
 {
     [SerializeField] private bool _rizeHealth;
     [SerializeField] private float _healthChangeValue;
-    [SerializeField] private ObjectWithHealth _gameObjectHealth;
+    [SerializeField] private VitalSign _gameObjectHealth;
 
     public void OnButtonClick()
     {        

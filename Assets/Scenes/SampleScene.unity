@@ -425,6 +425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _healthBar: {fileID: 381540706}
+  _speedOfHealthChange: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
