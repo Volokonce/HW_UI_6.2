@@ -12,13 +12,10 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         _healthBar = GetComponent<Slider>();
-        _healthBar.maxValue = _objectWithHealth.MaxHealth;
-        _healthBar.minValue = 0;
-        _healthBar.value = _objectWithHealth.ObjectHealth;
     }
 
     public void UpdateValue()
     {
-        _healthBar.value = _objectWithHealth.ObjectHealth;
+        _healthBar.value = _objectWithHealth.ObjectHealth / _objectWithHealth.MaxHealth;
     }
 }
